@@ -11,6 +11,7 @@ features apply to your model and firmware version, see the
 - tgl: Updated Intel GOP driver to 17.0.1077
 - tgl: Updated VBT to 250
 - Updated Rust toolchain to nightly-2024-05-11
+- cml-h: Updated CSME to 14.1.74.2355v6 (14.1.72.2287)
 
 ## 2024-05-17
 
