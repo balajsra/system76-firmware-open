@@ -1,10 +1,10 @@
 [submodule "edk2"]
 	path = edk2
-	url = https://github.com/system76/edk2.git
+	url = ../system76-edk2.git
 	branch = system76
 [submodule "coreboot"]
 	path = coreboot
-	url = https://github.com/system76/coreboot.git
+	url = ../system76-coreboot.git
 	branch = system76
 [submodule "tools/UEFITool"]
 	path = tools/UEFITool
@@ -36,8 +36,8 @@
 	branch = master
 [submodule "ec"]
 	path = ec
-	url = https://github.com/system76/ec.git
-	branch = master
+	url = ../system76-embedded-controller.git
+	branch = main
 [submodule "tools/apobtool"]
 	path = tools/apobtool
 	url = https://github.com/system76/apobtool.git

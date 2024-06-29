@@ -24,20 +24,7 @@ fi
 
 # Define base directory for firmware-update
 export BASEDIR="system76-firmware-update"
-
-# Clean build directory
-mkdir -p build
 BUILD="$(realpath "build/${MODEL}")"
-rm -rf "${BUILD:?}/${BASEDIR}"
-mkdir -p "${BUILD}/${BASEDIR}"
-
-# Rebuild and copy firmware-update
-pushd apps/firmware-update >/dev/null
-    rm -rf "build/x86_64-unknown-uefi"
-    make "build/x86_64-unknown-uefi/boot.efi"
-    cp -v "build/x86_64-unknown-uefi/boot.efi" "${BUILD}/${BASEDIR}"
-    cp -rv "res" "${BUILD}/${BASEDIR}"
-popd >/dev/null
 
 # Copy firmware
 mkdir -p "${BUILD}/${BASEDIR}/firmware"
